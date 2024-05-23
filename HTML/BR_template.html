@@ -10,18 +10,16 @@
             margin: 0;
             box-sizing: border-box;
         }
-        /* body{
-            height: 10000px;
-        } */
+        
         .mheader{
-            /* border: 3px solid red; */
+           
             position: sticky;
             top: 0;
             z-index: 2;
         }
         .header{
             height: 60px;
-            /* border: 3px solid black; */
+            
             display: flex;
             justify-content:space-between ;
             position: fixed;
@@ -47,9 +45,17 @@
             margin: 20px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+        .architect{
+            position: relative;
+            /* background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+            height: 800px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat; */
+        }
         .image{
             position: relative;
-            /* border: 3px solid blue; */
+           
         }
         .imgs{
             /* border: 3px solid red; */
@@ -57,8 +63,9 @@
             display: flex;
             width: 100%;
             justify-content: center;
-            /* align-items: center; */
-            top: 325px;
+            align-items: center;
+
+            top: 45%;
 
         }
         .img-con1{
@@ -127,10 +134,11 @@
             
         }
         .main{
-            width: 100%;
+            width: 98%;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
+            margin-left: 15px;
 
         }
        .pic{
@@ -145,13 +153,12 @@
         }
         .t{
             height: 100%;
-            width: 100%;
-            /* border: 2px solid black; */
+            width: 94%;
+           
            
             justify-content: space-between;
             font-size:24px ;
-            margin: 17px;
-           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         .t span{
             font-size: 17px;
@@ -161,6 +168,7 @@
         .para{
             font-size: 17px;
             margin-top: 20px;
+            text-align: justify;
         }
         .contact{
             font-size: 17px;
@@ -169,15 +177,20 @@
             text-align: center;
             margin-top: 18px;
         }
+        .contact:hover{
+            background-color: rgb(179, 177, 177);
+            cursor: pointer;
+
+        }
         .con{
             font-size: 22px;
             font-family: sans-serif;
+            margin-top: 100px;
         }
         .line{
             font-size: 18px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin-top: 22px;
-            margin-bottom: 10px;
             margin-left: 25px;
         }
         .form{
@@ -186,7 +199,6 @@
             border:1px solid rgb(216, 212, 212);
             margin: 10px;
             font-size: 17px;
-            color: gray;
             margin-left: 25px;
             display: flex;
         }
@@ -198,7 +210,7 @@
             border: none;
         }
         .power{
-            height: 55px;
+            height: 60px;
             width: 100%;
             justify-content: center;
             color: white;
@@ -206,7 +218,7 @@
             background-color: black;
             text-align: center;
             display: flex;
-            padding: 20px;
+            padding: 25px;
             top: 5px;
         }
         .rode{
@@ -231,11 +243,16 @@
             </div>
         </div>
     </div>
-        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="image not found" style="width: 100%;">
-        <div class="imgs">
-            <div class="img-con1">B R</div>
-            <div class="img-con2">Architects</div>
+
+        <div class="architect">
+            <img src="https://www.w3schools.com/w3images/architect.jpg" alt="image not found" style="width: 100%;">
+            <div class="imgs">
+                <div class="img-con1">B R</div>
+                <div class="img-con2">Architects</div>
+            </div>
         </div>
+        
+        
        </div>
        <div class="project">Projects</div>
        <div class="picture">
@@ -246,25 +263,25 @@
             </div>
         </div>
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
             <div class="con">
                 <p>Brick House</p>
            </div>
         </div>
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
             <div class="con">
                 <p>Renovated</p>
            </div>
         </div>
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
             <div class="con">
                 <p>Barn House</p>
            </div>
-        </div>
+        </div>  
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
             <div class="con">
                 <p>Summer House</p>
            </div>
@@ -276,13 +293,13 @@
            </div>
         </div>
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
             <div class="con">
                 <p>Renovated</p>
            </div>
         </div>
         <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
             <div class="con">
                 <p>Barn House</p>
            </div>
@@ -306,7 +323,7 @@
 
        <div class="pic">
         <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
-        <div class="t">John Doe
+        <div class="t">Jane Doe
             <div><span>Architect</span></div>
             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
             <div class="contact">Contact</div>
@@ -315,7 +332,7 @@
        
        <div class="pic">
         <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
-        <div class="t">John Doe
+        <div class="t">Mike Ross
             <div><span>Architect</span></div>
             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
             <div class="contact">Contact</div>
@@ -324,7 +341,7 @@
        
        <div class="pic">
         <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
-        <div class="t">John Doe
+        <div class="t">Dan Star
             <div><span>Architect</span></div>
             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
             <div class="contact">Contact</div>
@@ -335,10 +352,10 @@
     </div>
     <div class="con"><p style="margin-left: 25px;">Contact</p>
     <div class="line"><p>Lets get in touch and talk about your next project.</p></div>
-    <input type="text" value="Name" class="form">
-    <input type="text" value="Email" class="form">
-    <input type="text" value="Subject" class="form">
-    <input type="text" value="Comment" class="form">
+    <input type="text" placeholder="Name" class="form">
+    <input type="email" placeholder="Email" class="form">
+    <input type="text" placeholder="Subject" class="form">
+    <input type="text" placeholder="Comment" class="form">
     <button class="button">SEND MESSAGE</button>
     <div class="rode">
         <img src="https://www.w3schools.com/w3images/map.jpg" alt="" width="95%">
