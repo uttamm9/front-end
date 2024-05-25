@@ -15,8 +15,8 @@
            
             position: sticky;
             top: 0;
-            z-index: 2;
-        }
+            z-index: 1;
+            }
         .header{
             height: 60px;
             
@@ -26,7 +26,7 @@
             top: 0;
             background-color: white;
             width: 100%;
-            z-index: 1;
+            box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.16), 0 2px 10px 0px rgba(0, 0, 0, 0.12);
            
             
         }
@@ -47,18 +47,14 @@
         }
         .architect{
             position: relative;
-            /* background-image: url("https://www.w3schools.com/w3images/architect.jpg");
-            height: 800px;
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat; */
+           
         }
         .image{
             position: relative;
            
         }
         .imgs{
-            /* border: 3px solid red; */
+            
             position: absolute;
             display: flex;
             width: 100%;
@@ -96,6 +92,13 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             
+        }
+        .house{
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
         }
         .picture .pictureimge{
             width: 260px;
@@ -146,7 +149,8 @@
             
         }
         .pic img{
-            width: 290px;  
+            width: 290px; 
+            filter: grayscale(75%); 
         }
         .te{
             display: flex;
@@ -227,6 +231,14 @@
             margin-top: 5px;
             margin-bottom: 5px;
         }
+        @media screen and (max-width: 600px ){
+            .content2{
+                display: none;
+            }
+            .img-con2{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -256,30 +268,33 @@
        </div>
        <div class="project">Projects</div>
        <div class="picture">
-        <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
-            <div class="con">
-                 <p>Summer House</p>
+        <div class="house">
+            <div class="pictureimge">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                <div class="con">
+                     <p>Summer House</p>
+                </div>
             </div>
+            <div class="pictureimge">
+                <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+                <div class="con">
+                    <p>Brick House</p>
+               </div>
+            </div>
+            <div class="pictureimge">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+                <div class="con">
+                    <p>Renovated</p>
+               </div>
+            </div>
+            <div class="pictureimge">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+                <div class="con">
+                    <p>Barn House</p>
+               </div>
+            </div> 
         </div>
-        <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
-            <div class="con">
-                <p>Brick House</p>
-           </div>
-        </div>
-        <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
-            <div class="con">
-                <p>Renovated</p>
-           </div>
-        </div>
-        <div class="pictureimge">
-            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
-            <div class="con">
-                <p>Barn House</p>
-           </div>
-        </div>  
+         <div class="house">
         <div class="pictureimge">
             <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
             <div class="con">
@@ -304,7 +319,7 @@
                 <p>Barn House</p>
            </div>
         </div>
-        
+     </div>
        </div>
        <div class="text"><p>About</p></div>
        <div class="text2"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aperiam reiciendis laudantium obcaecati et atque recusandae. Consectetur obcaecati minus inventore itaque aliquam quibusdam aliquid libero asperiores dignissimos numquam animi nesciunt, qui iure. Ab magnam architecto et asperiores, minima quidem fugiat libero natus reprehenderit animi voluptate! Nemo rerum reiciendis necessitatibus magnam!</p>
