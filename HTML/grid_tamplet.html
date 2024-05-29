@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            grid-gap: 1px;
+            /* border-radius: 1px; */
+        }
+        .container{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: 1fr 4fr;
+            height: 100vh;
+        }
+        .upper{
+            display: grid;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+        .lower{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 5px;
+            
+            
+        }
+        .lower_right{
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            grid-gap: 5px;
+            border-radius: 10px;           
+        }
+        .box2{
+            display: grid;
+            background-color: purple;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .box5{
+            background-color: yellow;
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .lower_left{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: 2fr 1fr;
+        }
+        .box346{
+            display: grid;
+            /* background-color: yellow; */
+            grid-gap: 5px;
+            grid-template-columns: 2fr 1fr;
+
+
+        }
+        .box7{
+            background-color: yellow;
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box3{
+            background-color: yellow;
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            
+        }
+        .box46{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: 1fr 1fr;
+        }
+        .box4{
+            background-color: purple;
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .box5 h2{
+            margin-top: 30px;
+        }
+        .box3 h2{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="upper">
+        <h2>1</h2>
+    </div>
+    <div class="lower">
+        <div class="lower_right">
+            <div class="box2">
+                <h2>2</h2>
+            </div>
+            <div class="box5">
+                <H2>5</H2>
+            </div>
+        </div>
+        <div class="lower_left">
+            <div class="box346">
+                <div class="box3">
+                    <h2>3</h2>
+                </div>
+                <div class="box46">
+                    <div class="box4">
+                        <h2>4</h2>
+                    </div>
+                    <div class="box4">
+                        <h2>6</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box7">
+                <h2>7</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
