@@ -14,6 +14,18 @@
             padding: 0px;
             box-sizing: border-box;
         }
+        body{
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #757575;
+            background-color: #fff;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+        
         .header{
             /* border: 2px solid black; */
             display: flex;
@@ -22,6 +34,7 @@
             width: 100%;
             background-color: #13357b;
             justify-content: space-between;
+            z-index: 1;
             
         }
         
@@ -31,6 +44,7 @@
             align-items: center;
             display: inline-flex;
             margin-left: 50px;
+            
         }
         .icon i{
             margin: 0px 6px 0px 0px;
@@ -61,43 +75,110 @@
             position: absolute;
             display: flex;
             top: 45px;
+            /* display: flex; */
             font-family: "Roboto", sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
             border-bottom: 1px solid rgba(255, 255, 255, .1);
             height: 100px;
             width: 100% ;
-            background-color: aqua;
+            /* background-color: aqua; */
             justify-content: space-between;
             align-items: center;
+            z-index: 1;
         }
         .brand{
             text-decoration: none;
+            margin-left: 40px;
+            color: white;
+        
             /* color: white; */
         }
         .navbar_button{
-            border: 2px solid firebrick;
-            font-size: 16px;
+            height: 100%;
+            /* border: 2px solid firebrick; */
+            /* font-size: 16px; */
+            font-size: 1.1rem;
             font-family: "Roboto", sans-serif;
             display: flex;
-            padding: 10px;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            align-items: center;
             text-decoration: none;
+            /* margin-right: 40px; */
+            justify-content: space-between;
 
         }
         .home{
-            padding: 10px;
+            
+            display: flex;
+            position: relative;
+            align-items: center;
+            height: 100%;
+            
+            overflow: hidden;
             
          } 
+         .home a{
+            padding: 20px;
+         }
         .book{
-            background-color: blue;
+            background-color: #13357b;
             padding: 6px 18px;
             border-radius: 50rem;
-            text-decoration: none;
+            text-decoration: none;  
+            
+        }
+        .book:hover{
+            background-color: white;
+            transition-duration: 1.1s;
+        }
+        .book:hover a{
+            color: #13357b;
+        }
+        .navbar_button .home:nth-child(1){
+            
+            background-color: #13357b;
+            color: white;
         }
         .navbar_button a{
             text-decoration: none;
-        }
+            color: white;
+            z-index: 1;
         
+        }
+        .popup{
+            background-color: #13357b;
+            height: 100%;
+            width: 100%;
+           
+            top: 100px;
+            position: absolute;
+            
+        
+        }
+        .home:hover .popup{
+            transition-duration: 1.1s;
+            transform: translatey(-100px);
+        }
+        .imagee{
+             width: 100%;
+             height: 100vh;
+            display: flex;
+            justify-content: center ;
+        }
 
+        .imagee img{
+            height: 100%;
+        }
+        .baground{
+            height: 100%;
+            width: 100%;
+            top: 45px;
+            position: absolute;
+            background-color: black;
+            opacity: 0.5;
+        }
+       
     </style>
 </head>
 <body>
@@ -116,18 +197,26 @@
         </div>
     </div>
     <nav class="navbar">
-        <a href="" class="brand"><h1> <i class="fa-solid fa-location-dot"></i> Travela</h1></a>
+        <a href="" class="brand"><h1> <i class="fa-solid fa-location-dot"></i> Travela </h1></a>
 
         <div class="navbar_button">
             <div class="home"><a href="">Home</a></div>
-            <div class="home"> <a href="">About</a></div>
-            <div class="home"><a href="">Services</a></div>
-            <div class="home"><a href="">Packages</a></div>
-            <div class="home"><a href="">Blog</a></div>
-            <div class="home"><a href="">pages</a></div>
-            <div class="home"><a href="">contact</a></div>
+            <div class="home" > <div class="popup"></div><a href="">About</a></div>
+            <div class="home" ><div class="popup"></div><a href="">Services</a></div>
+            <div class="home"><div class="popup"></div><a href="">Packages</a></div>
+            <div class="home"><div class="popup"></div><a href="">Blog</a></div>
+            <div class="home"><div class="popup"></div><a href="">pages</a></div>
+            <div class="home"><div class="popup"></div><a href="">contact</a></div>
             <div class="book"><a href="">Book now</a></div>
         </div>
     </nav>
+
+    <div class="imagee">
+        <img src="https://themewagon.github.io/travela/img/carousel-2.jpg" alt="" width="100%" style="margin-top: 45px;">
+        <div class="baground">
+        </div>
+    </div>
+
 </body>
 </html>
+
