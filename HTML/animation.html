@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            animation-name: box1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute
+        
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            animation-name: box2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: tomato;
+            animation-name: box3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes box1{
+            from{
+                height: 0px;
+                width: 0px;
+                top: 0px;
+                left: 0px;
+                background-color: yellow;
+            }
+            to{
+                height: 100px;
+                width: 100px;
+                top: 500px;
+                left: 500px;
+                background-color: black;
+            }
+        }
+        @keyframes box2{
+            from{
+                height: 0px;
+                width: 0px;
+                top: 0px;
+                right: 0px;
+                background-color: yellow;
+            }
+            to{
+                height: 100px;
+                width: 100px;
+                top: 500px;
+                right: 500px;
+                background-color: pink;
+            }
+        }
+        @keyframes box3{
+            0%{
+                left: 0px;
+                top: 0px
+                
+            }
+            25%{
+                left: 92%;
+               
+                top: 0px;
+            }
+            50%{
+                
+                right: 0px;
+                left: 92%;
+                top: 90%;
+            }
+            75%{
+                
+                left: 0px;
+                top: 90%;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
